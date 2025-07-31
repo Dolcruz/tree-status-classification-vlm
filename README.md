@@ -21,29 +21,6 @@ From an initial dataset of 560 labeled trees (516 alive, 44 dead), we generated 
 - **Comparative evaluation** of 6 different vision language models
 - **Novel rasterization approach** for point cloud to image conversion
 
-## Repository Structure
-
-```
-tree-status-classification-vlm/
-├── README.md                      # This file
-├── requirements.txt              # Python dependencies
-├── src/
-│   ├── pointcloud_to_images.py   # 3D point cloud to image conversion
-│   ├── 2drastertest.py          # 2D rasterization approach
-│   ├── tree_status_llm_folder.py # Vision language model inference
-│   ├── tree_eval.py             # Model evaluation and metrics
-│   ├── idgiver.py               # Tree ID assignment utility
-│   ├── npytotxt.py              # NumPy to text conversion
-│   └── copy_failed_images.py    # Utility for handling failed cases
-├── data/
-│   ├── pointclouds/             # Raw point cloud data (ASCII format)
-│   ├── TreeswithID/             # Generated tree images
-│   └── EvalsResults/            # Evaluation results and metrics
-├── docs/
-│   └── methodology.md           # Detailed methodology documentation
-└── examples/
-    └── sample_outputs/          # Example outputs and visualizations
-```
 
 ## Methodology
 
@@ -55,8 +32,7 @@ Data were collected in June 2024 under leaf-on conditions, covering approximatel
 
 1. **Ground Classification**: Simple Morphological Filter (SMRF) from PDAL
 2. **Tree Segmentation**: Local Minimal Filter with 5m window size
-3. **Individual Tree Delineation**: Region growing algorithm based on Dalponte method
-4. **Manual Validation**: Visual inspection and cross-validation between team members
+3. **Manual Validation**: Visual inspection and cross-validation between team members
 
 ### Image Generation
 
@@ -92,8 +68,6 @@ The rasterization algorithm uses a grid resolution of 0.05 units and applies col
 
 - Python 3.8+
 - Google Gemini API access
-- PDAL (Point Data Abstraction Library)
-- Open3D for 3D visualization
 
 ### Installation
 
@@ -164,7 +138,7 @@ Trees are labeled as either "Alive" or "Dead" based on visual assessment of poin
 1. **Vision-language models can effectively perform tree health classification** without domain-specific architectures
 2. **Larger-scale models significantly outperform smaller variants** in specialized visual tasks
 3. **Multi-perspective image generation** enhances classification accuracy
-4. **Open-source models show limitations** in identifying dead trees, exhibiting bias toward majority class
+4. **Small-Open-source models show limitations** in identifying dead trees, exhibiting bias toward majority class
 
 ## Limitations
 

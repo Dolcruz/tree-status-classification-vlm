@@ -18,10 +18,3 @@ pathlib2>=2.3.0
 # Validation and utilities
 pydantic>=1.8.0
 
-# Point cloud processing (optional, if using PDAL)
-# pdal>=3.0.0  # Uncomment if using PDAL for point cloud processing
-
-# Development and testing (optional)
-# pytest>=6.0.0
-# black>=21.0.0
-# flake8>=3.9.0

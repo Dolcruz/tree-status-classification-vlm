@@ -1,0 +1,27 @@
+# Core dependencies for tree status classification using vision language models
+
+# Machine Learning and Vision
+open3d>=0.17.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+Pillow>=8.0.0
+
+# Google Gemini API
+google-genai>=1.0.0
+
+# Data processing
+pandas>=1.3.0
+pathlib2>=2.3.0
+
+# Validation and utilities
+pydantic>=1.8.0
+
+# Point cloud processing (optional, if using PDAL)
+# pdal>=3.0.0  # Uncomment if using PDAL for point cloud processing
+
+# Development and testing (optional)
+# pytest>=6.0.0
+# black>=21.0.0
+# flake8>=3.9.0

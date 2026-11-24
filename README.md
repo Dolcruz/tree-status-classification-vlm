@@ -26,7 +26,7 @@ From an initial dataset of 560 labeled trees (516 alive, 44 dead), we generated 
 
 ### Data Collection
 
-Data were collected in June 2024 under leaf-on conditions, covering approximately 11.18 hectares (260m × 430m) section of Sandhausen Forest in Baden-Württemberg, Germany (coordinates: 49.3388°N, 8.6413°E). The dataset consisted of high-resolution point clouds from UAV-borne laser scanning (ULS). We did not carry out the survey ourselves; the data were provided to us for this project.
+Data were collected in June 2024 under leaf-on conditions, covering approximately 11.18 hectares (260m × 430m) section of Sandhausen Forest in Baden-Württemberg, Germany (coordinates: 49.3388°N, 8.6413°E). The dataset consisted of high-resolution photogrammetric point clouds, reconstructed from a large number of overlapping drone images. We did not carry out the survey ourselves; the data were provided to us for this project.
 
 ### Point Cloud Processing
 
@@ -176,4 +176,4 @@ We thank William for his valuable guidance throughout this research project and 
 
 ## Keywords
 
-Tree Status Classification, Vision Language Models, Forest Monitoring, Point Cloud Rasterization, Photogrammetry, LiDAR, UAV, Ecological Monitoring, Computer Vision, Machine Learning
+Tree Status Classification, Vision Language Models, Forest Monitoring, Point Cloud Rasterization, Photogrammetry, UAV, Ecological Monitoring, Computer Vision, Machine Learning

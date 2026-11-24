@@ -4,7 +4,7 @@ A Comparative Study in Sandhausen Forest
 
 ## Abstract
 
-This repository contains the code and methodology for a novel approach using state-of-the-art vision language models to classify tree health status in the Sandhausen Forest, Germany. We collected 3D point cloud data using drone technology and processed it through various segmentation and classification pipelines. Our methodology involved extracting individual tree point clouds using segmentation algorithms, generating multi-view images, and testing multiple vision language models including Gemini 2.5 Flash, o4-mini, and various Gemma models.
+This repository contains the code and methodology for a novel approach using state-of-the-art vision language models to classify tree health status in the Sandhausen Forest, Germany. We worked with a 3D point cloud dataset from a drone survey that was provided to us, and processed it through various segmentation and classification pipelines. Our methodology involved extracting individual tree point clouds using segmentation algorithms, generating multi-view images, and testing multiple vision language models including Gemini 2.5 Flash, o4-mini, and various Gemma models.
 
 From an initial dataset of 560 labeled trees (516 alive, 44 dead), we generated rasterized views through custom Python scripts, creating seven images per tree (six perspectives plus one combined view) for a total of 3,920 images. The best performing model, Gemini 2.5 Flash, achieved an overall accuracy of 97.86% with a mean IoU of 87.73% when evaluated with multiple inference runs.
 
@@ -26,13 +26,13 @@ From an initial dataset of 560 labeled trees (516 alive, 44 dead), we generated 
 
 ### Data Collection
 
-Data were collected in June 2024 under leaf-on conditions, covering approximately 11.18 hectares (260m × 430m) section of Sandhausen Forest in Baden-Württemberg, Germany (coordinates: 49.3388°N, 8.6413°E). The dataset consisted of high-resolution point clouds from UAV-borne laser scanning (ULS).
+Data were collected in June 2024 under leaf-on conditions, covering approximately 11.18 hectares (260m × 430m) section of Sandhausen Forest in Baden-Württemberg, Germany (coordinates: 49.3388°N, 8.6413°E). The dataset consisted of high-resolution point clouds from UAV-borne laser scanning (ULS). We did not carry out the survey ourselves; the data were provided to us for this project.
 
 ### Point Cloud Processing
 
 1. **Ground Classification**: Simple Morphological Filter (SMRF) from PDAL
-2. **Tree Segmentation**: Local Minimal Filter with 5m window size
-3. **Manual Validation**: Visual inspection and cross-validation between team members
+2. **Tree Segmentation**: Individual trees segmented with PyCrown (5m window size)
+3. **Manual Labelling**: Each segmented tree labelled by hand as alive or dead, with cross-validation between team members
 
 ### Image Generation
 
